@@ -1,0 +1,121 @@
+<% var data = {
+title: "",
+description: ""
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<main class="page-main">
+    <div class="mobile-wrapper js_mobile-menu-wrapper">
+        <nav class="mobile-menu">
+            <button class="mobile-menu__close js_mobile-menu-close"></button>
+            <div class="mobile-menu__header">
+                <nav class="lang-menu js_lang-menu">
+                    <button class="lang-menu__toggler lang-menu__toggler--ru js_lang-menu-toggle" type="button" title="Россия">RU</button>
+                    <div class="lang-menu__list js_lang-menu-list">
+                        <div class="lang-menu__list-title">
+                            <span>Страна</span>
+                        </div>
+                        <div class="lang-menu__item">
+                            <a href="/" title="United States" class="lang-menu__link lang-menu__link--us">United States</a>
+                        </div>
+                        <div class="lang-menu__item">
+                            <a href="/" title="Netherlands" class="lang-menu__link lang-menu__link--nl">Netherlands</a>
+                        </div>
+                        <div class="lang-menu__item">
+                            <a href="/" title="Беларусь" class="lang-menu__link lang-menu__link--by">Беларусь</a>
+                        </div>
+                        <div class="lang-menu__item">
+                            <div title="Россия" class="lang-menu__link lang-menu__link--ru lang-menu__link--active"><span>Россия</span></div>
+                        </div>
+                        <div class="lang-menu__item">
+                            <a href="/" title="Казахстан" class="lang-menu__link lang-menu__link--kz">Казахстан</a>
+                        </div>
+                        <div class="lang-menu__item">
+                            <a href="/" title="Türkiye" class="lang-menu__link lang-menu__link--tr">Türkiye</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="mobile-menu__body js_mobile-menu__body layout-scrollbar">
+                <div class="mobile-menu__main-menu">
+                    <div class="mobile-menu__item js_parent-first-level">
+                        <a class="mobile-menu__link icon-more" href="#">Services</a>
+                        <div class="mobile-menu__sub-menu js_mobile-menu-second-level">
+                            <div class="js_sub-menu-close">
+                                <a href="#" class="mobile-menu__link mobile-menu__link--title">Services</a>
+                            </div>
+                            <div class="mobile-menu__items layout-scrollbar">
+                                <div class="mobile-menu__item js_parent-second-level">
+                                    <a href="#" class="mobile-menu__link mobile-menu__link--sm icon-more">Облачные вычисления</a>
+                                    <div class="mobile-menu__sub-menu mobile-menu__sub-menu--last js_mobile-menu-third-level">
+                                        <div class="js_sub-menu-close">
+                                            <a href="#" class="mobile-menu__link mobile-menu__link--title mobile-menu__link--title-last">Облачные вычисления</a>
+                                        </div>
+                                        <div class="mobile-menu__items layout-scrollbar">
+                                            <div class="mobile-menu__item">
+                                                <a href="#" class="mobile-menu__link mobile-menu__link--xs">
+                                                    <span class="mobile-menu__link-title">Cloud consulting</span>
+                                                    <span class="mobile-menu__link-subtitle">Relational database services for MySQL, PostgreSQL, and SQL server.</span>
+                                                </a>
+                                            </div>
+                                            <div class="mobile-menu__item">
+                                                <a href="#" class="mobile-menu__link mobile-menu__link--xs">
+                                                    <span class="mobile-menu__link-title">Cloud infrastructure analytics</span>
+                                                    <span class="mobile-menu__link-subtitle">Health-specific solutions to enhance the patient experience.</span>
+                                                </a>
+                                            </div>
+                                            <div class="mobile-menu__item">
+                                                <a href="#" class="mobile-menu__link mobile-menu__link--xs">
+                                                    <span class="mobile-menu__link-title">Hybrid Cloud</span>
+                                                    <span class="mobile-menu__link-subtitle">Data storage, AI, and analytics solutions for government agencies.</span>
+                                                </a>
+                                            </div>
+                                            <div class="mobile-menu__item">
+                                                <a href="#" class="mobile-menu__link mobile-menu__link--xs">
+                                                    <span class="mobile-menu__link-title">Hybrid Cloud</span>
+                                                    <span class="mobile-menu__link-subtitle">Data storage, AI, and analytics solutions for government agencies.</span>
+                                                </a>
+                                            </div>
+                                            <div class="mobile-menu__item">
+                                                <a href="#" class="mobile-menu__link mobile-menu__link--xs">
+                                                    <span class="mobile-menu__title">Multicloud</span>
+                                                    <span class="mobile-menu__link-subtitle">Relational database services for MySQL, PostgreSQL, and SQL server.</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mobile-menu__item">
+                                    <a href="#" class="mobile-menu__link mobile-menu__link--sm">Выделенные серверы</a>
+                                </div>
+                                <div class="mobile-menu__item">
+                                    <a href="#" class="mobile-menu__link mobile-menu__link--sm">Платформенные сервисы</a>
+                                </div>
+                                <div class="mobile-menu__item">
+                                    <a href="#" class="mobile-menu__link mobile-menu__link--sm">Информационная безопасность</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mobile-menu__item">
+                        <a class="mobile-menu__link" href="#">Managed IT</a>
+                    </div>
+                    <div class="mobile-menu__item">
+                        <a class="mobile-menu__link" href="#">Telecom Solutions</a>
+                    </div>
+                    <div class="mobile-menu__item">
+                        <a class="mobile-menu__link" href="#">About Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-menu__footer">
+                <div class="mobile-menu__footer-links">
+                    <a href="#" class="mobile-menu__footer-link">Контакты</a>
+                    <a href="#" class="mobile-menu__footer-link">Поиск</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</main>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

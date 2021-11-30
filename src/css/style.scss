@@ -1,0 +1,15 @@
+// библиотеки
+@import '~bootstrap/dist/css/bootstrap-grid.min.css';
+
+// подключаем массив шрифтов
+@import './fonts/*.css';
+
+// основа
+@import 'variables';
+@import 'mixins';
+@import 'styleguide';
+
+@import 'partials/page-header';
+@import 'partials/mobile-menu';
+@import 'partials/lang-menu';
+@import 'partials/default';

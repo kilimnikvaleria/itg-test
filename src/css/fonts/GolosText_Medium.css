@@ -1,0 +1,10 @@
+@font-face {
+	font-family: "Golos";
+	src: url("./GolosText_Medium.eot");
+	src: url("./GolosText_Medium.eot?#iefix") format("embedded-opentype"),
+	url("./GolosText_Medium.woff2") format("woff2"),
+	url("./GolosText_Medium.woff") format("woff"),
+	url("./GolosText_Medium.ttf") format("truetype");
+	font-weight: 500;
+	font-style: normal;
+}

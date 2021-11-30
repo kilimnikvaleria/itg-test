@@ -1,0 +1,38 @@
+$black-design: #000;
+$gray-design:  #151617;
+$gray-mid-design: #C6D6E5;
+$gray-light-design:  #577188;
+$gray-blue-design: #F1F8FE;
+$blue-design: #1d7ded;
+$white-design: #FFF;
+
+$defaultShadow: 0 0 0 2px rgba(131, 188, 255, 0.5);
+$btnShadowWight: 0 6px $white-design, 0 12px $white-design;
+$btnShadowBlue: 0 6px $blue-design, 0 12px $blue-design;
+
+//scroll
+$scrollbar-size: 2px;
+$scrollbar-minlength: 30px; /* Minimum length of scrollbar thumb (width of horizontal, height of vertical) */
+$scrollbar-ff-width: thin; /* FF-only accepts auto, thin, none */
+$scrollbar-track-color: transparent;
+$scrollbar-color: #C6D6E5;
+$scrollbar-color-hover: $blue-design;
+$scrollbar-color-active: $blue-design;
+
+// fonts
+$mainFont: 'Golos', sans-serif;
+$fontSize: 16px;
+
+
+// width
+$media-sm: 576px;
+$media-md: 768px;
+$media-lg: 992px;
+$media-xl: 1200px;
+
+
+
+
+
+
+

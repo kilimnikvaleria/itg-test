@@ -1,0 +1,65 @@
+.show {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+  z-index: 10;
+}
+
+.open {
+  transform: none;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.icon-more {
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 18px;
+    right: 0;
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-image: url("../images/icons/arrow-right.svg");
+  }
+}
+
+/* This class controls what elements have the new fancy scrollbar CSS */
+.layout-scrollbar {
+  scrollbar-color: $scrollbar-color $scrollbar-track-color;
+}
+.layout-scrollbar::-webkit-scrollbar {
+  height: $scrollbar-size;
+  width: $scrollbar-size;
+}
+.layout-scrollbar::-webkit-scrollbar-track {
+  background-color: $scrollbar-track-color;
+}
+.layout-scrollbar::-webkit-scrollbar-thumb {
+  background-color: $scrollbar-color;
+  border-radius: 2px;
+}
+.layout-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: $scrollbar-color-hover;
+}
+.layout-scrollbar::-webkit-scrollbar-thumb:active {
+  background-color: $scrollbar-color-active;
+}
+.layout-scrollbar::-webkit-scrollbar-thumb:vertical {
+  min-height: $scrollbar-minlength;
+}
+.layout-scrollbar::-webkit-scrollbar-thumb:horizontal {
+  min-width: $scrollbar-minlength;
+}
+/* .layout-scrollbar::-webkit-scrollbar-corner {
+  display: none;
+}
+.layout-scrollbar::-webkit-scrollbar-button {
+  display: none;
+}
+ */
+
+

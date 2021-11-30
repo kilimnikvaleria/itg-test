@@ -1,0 +1,9 @@
+{
+  "rules": {
+    "color-no-invalid-hex": true,
+    "font-family-no-duplicate-names": true,
+    "property-no-vendor-prefix": true,
+    "declaration-colon-space-after": "always",
+    "declaration-block-no-duplicate-properties": true
+  }
+}
